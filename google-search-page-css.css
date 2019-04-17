@@ -1,0 +1,61 @@
+html {
+    font-family: arial,sans-serif;
+    color: rgb(10, 10, 10);
+}
+
+
+/* Editing header elements */
+#gmail, #images {
+    font-size: 13px;
+    margin: 10px;
+}
+img[alt="menu"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+.name {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 15px;
+    line-height: 30px; 
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(42, 0, 121);
+    margin: 10px;
+}
+/* Adding flex property to header element */
+#flex-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+/* Editing the style of main elements */
+#google-logo {
+    display: block;
+    margin: 22.5vh auto 10px auto;
+}
+#search-bar {
+    display: block;
+    margin: auto;
+    width: 550px;
+    height: 45px;
+    border: 0.5px solid rgba(0, 0, 0, 0.137);
+    border-radius: 20px;
+    overflow: visible;
+}
+#search-bar::after {
+    background-color: rgb(255, 15, 15);
+    content: "";
+    background-image: url("items/google-voice-search.png");    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0px;
+}
