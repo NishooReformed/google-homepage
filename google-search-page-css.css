@@ -1,18 +1,26 @@
 html {
     font-family: arial,sans-serif;
     color: rgb(10, 10, 10);
-    min-width: 600px;
 }
 a {
     text-decoration: none;
     color: #5f6368;
 }
-
+body {
+    height: 100%;
+    min-width: 900px;
+    min-height: 600px;
+    position: relative;
+}
 
 /* Editing header elements */
 #gmail, #images {
     font-size: 13px;
     margin: 10px;
+    color: #222;
+}
+#gmail:hover, #images:hover {
+    text-decoration: underline;
 }
 img[alt="menu"] {
     width: 20px;
@@ -37,7 +45,7 @@ img[alt="menu"] {
     justify-content: flex-end;
     align-items: center;
     padding-top: 10px;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 
@@ -71,6 +79,40 @@ img[alt="voice-search"] {
 #search-bar:hover {
     box-shadow: 1px 2px 4px -2px #0000004d;
 }
+#search-buttons {
+    margin-top: 20px;
+    position: relative;
+}
+.clickable {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    padding: 0 16px;
+    border: 0px solid;
+    background-color: rgb(242, 242, 242);
+    color: #5f6368;
+}
+.clickable:hover {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+}
+input[value="Google Search"] {
+    display: block;
+    position: absolute;
+    left: 39%;
+}
+input[value="I'm Feeling lucky"] {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right:39%;   
+}
 
 
 
@@ -95,21 +137,16 @@ footer {
 #bottom-section {
     line-height: 41px;
     border-top: 1px solid #ddd;
-    padding-left: 20px;
+    padding-left: 15px;
+    min-width: 900px;
 }
 #div-left, #div-right {
     display: inline-block;
-    width: 45vw;
-}
-#div-left {
-    
+    width: 49%;
 }
 #div-right {
     text-align: right;
-    padding-right: -10px;
-    margin-right: -3vw;
 }
 .bottom-left, .bottom-right {
-    padding: 10px;
-    
+    padding: 13px;  
 }

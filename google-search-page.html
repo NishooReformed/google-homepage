@@ -5,20 +5,22 @@
     </head>
     <body>
         <header id="flex-container">
-            <div id="gmail">Gmail</div>
-            <div id="images">Images</div>
-            <img src="items/menu-grid.png" alt="menu">
-            <div class="name">N</div>
+            <a href="#" id="gmail">Gmail</a>
+            <a href="#" id="images">Images</a>
+            <a href="#"><img src="items/menu-grid.png" alt="menu"></a>
+            <a><div class="name">N</div></a>
         </header>
         
         <main>
             <img src="items/googlelogo.png" alt="google logo" id="google-logo"><br>
             <div id="search-bar-div">
-                <input type="url" name="search-bar" id="search-bar" placeholder="Search Google or type a URL"><br>
+                <input type="url" name="search-bar" id="search-bar"><br>
                 <img src="items/google-voice-search.png" alt="voice-search">
             </div>
-            <input type="button" value="Google Search">
-            <input type="button" value="I'm feeling lucky">
+            <div id="search-buttons">
+                <input class="clickable" type="button" value="Google Search">
+                <input class="clickable" type="button" value="I'm Feeling lucky">
+            </div>
         </main>
         
         <footer>
