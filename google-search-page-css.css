@@ -1,6 +1,11 @@
 html {
     font-family: arial,sans-serif;
     color: rgb(10, 10, 10);
+    min-width: 600px;
+}
+a {
+    text-decoration: none;
+    color: #5f6368;
 }
 
 
@@ -31,7 +36,7 @@ img[alt="menu"] {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 10px;
+    padding-top: 10px;
     margin-right: 20px;
 }
 
@@ -39,7 +44,7 @@ img[alt="menu"] {
 /* Editing the style of main elements */
 #google-logo {
     display: block;
-    margin: 22.5vh auto 10px auto;
+    margin: 21.5vh auto 10px auto;
 }
 #search-bar-div {
     margin: auto;
@@ -65,4 +70,46 @@ img[alt="voice-search"] {
 }
 #search-bar:hover {
     box-shadow: 1px 2px 4px -2px #0000004d;
+}
+
+
+
+/* Editing the footer and it's elements */
+footer {
+    font-size: 13px;
+    background-color: rgb(242, 242, 242);
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+    color: #5f6368;
+    height: 84px;
+    width: 100%;
+}
+#country_name {
+    line-height: 41px;
+    font-size: 15px;
+    padding-left: 30px;
+    border-top: 1px solid #ddd;
+}
+#bottom-section {
+    line-height: 41px;
+    border-top: 1px solid #ddd;
+    padding-left: 20px;
+}
+#div-left, #div-right {
+    display: inline-block;
+    width: 45vw;
+}
+#div-left {
+    
+}
+#div-right {
+    text-align: right;
+    padding-right: -10px;
+    margin-right: -3vw;
+}
+.bottom-left, .bottom-right {
+    padding: 10px;
+    
 }
