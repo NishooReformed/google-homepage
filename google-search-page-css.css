@@ -41,21 +41,28 @@ img[alt="menu"] {
     display: block;
     margin: 22.5vh auto 10px auto;
 }
-#search-bar {
-    display: block;
+#search-bar-div {
     margin: auto;
-    width: 550px;
+    width: 580px;
+    position: relative;
+}
+img[alt="voice-search"] {
+    width: 15px;
+    height: auto;
+    position: absolute;
+    top: 12.5px;
+    right: 19px;
+}
+#search-bar {
+    margin: auto;
+    width: 580px;
     height: 45px;
     border: 0.5px solid rgba(0, 0, 0, 0.137);
     border-radius: 20px;
     overflow: visible;
+    padding-inline-start: 15px;
+    font-size: 16px;
 }
-#search-bar::after {
-    background-color: rgb(255, 15, 15);
-    content: "";
-    background-image: url("items/google-voice-search.png");    
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    right: 0px;
+#search-bar:hover {
+    box-shadow: 1px 2px 4px -2px #0000004d;
 }
